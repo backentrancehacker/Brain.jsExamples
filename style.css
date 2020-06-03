@@ -1,0 +1,62 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	font-family: 'Manrope', sans-serif;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+main.app {
+	height: 100%;
+	width: 100%;
+	padding: 0.5em;
+}
+main.app .text {
+	width: 100%;
+	margin: 0;	
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+	text-align: center;
+}
+main.app .text h1 {
+	font-size: 3em;
+	margin: 0;
+	white-space: nowrap;
+}
+a, a:visited, a:hover{
+	text-decoration: none;
+}
+div.level {
+	margin: 0.5em;
+	padding: 1em;
+	color: #555;
+	text-decoration: none;
+	border: 2px solid silver;
+	border-radius: 2px;
+	cursor: pointer;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 1.1em;
+	transition: border 0.2s ease;
+}
+div.level:hover {
+	border: 2px solid dodgerblue;
+}
+#output {
+	background: #eee;
+	color: #000;
+	border: 2px solid silver;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	word-break: break-all;
+	padding: 0.5em;
+	font-size: 1.3em;
+	font-family: monospace;
+}
